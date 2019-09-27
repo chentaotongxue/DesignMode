@@ -1,0 +1,29 @@
+
+一、策略模式分析：
+
+1.定义接口
+    interface FlyBehavior
+        void fly();
+    interface QuackBehavior
+        void quack();
+
+2.定义具体类，实现接口
+    class Quack implements QuackBehavior
+    class Squeak implements QuackBehavior
+    class MuteQuack implements QuackBehavior
+
+    class FlyNoWay implements FlyBehavior
+    class FlyWithWings implements FlyBehavior
+
+3.定义抽象类
+    abstract class Duck
+
+4.定义MallardDuck类，继承超类
+    class MallardDuck extends Duck
+
+
+二、总结：
+    根据应用场景的不同选择不同的算法或者策略来完成该功能。
+
+    策略模式可以理解为老司机开车，但是他今天想到路虎，明天想开奔驰。。。，
+针对他不同的需求，来产生不同的应对策略，好记一点就是：老司机开车！！！ 哈哈。。。
