@@ -1,13 +1,12 @@
 package com.roadrover.designmode;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MyAdapter mAdapter;
-    private ListView mListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView(){
-        mAdapter = new MyAdapter();
-        mListView = (ListView) findViewById(R.id.listview);
-        mListView.setAdapter(mAdapter);
     }
 
     private void initData(){
